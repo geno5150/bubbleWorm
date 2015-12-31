@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330831731C35968F00F4051E /* BadGuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330831721C35968F00F4051E /* BadGuy.swift */; };
+		330831761C35BF7D00F4051E /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 330831741C35BF7D00F4051E /* SparkParticle.sks */; };
+		330831771C35BF7D00F4051E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 330831751C35BF7D00F4051E /* spark.png */; };
 		B51590AA1C3229FA00DB5455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51590A91C3229FA00DB5455 /* AppDelegate.swift */; };
-		B51590AC1C3229FA00DB5455 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B51590AB1C3229FA00DB5455 /* GameScene.sks */; };
 		B51590AE1C3229FA00DB5455 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51590AD1C3229FA00DB5455 /* GameScene.swift */; };
 		B51590B01C3229FA00DB5455 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51590AF1C3229FA00DB5455 /* GameViewController.swift */; };
 		B51590B31C3229FA00DB5455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51590B11C3229FA00DB5455 /* Main.storyboard */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330831721C35968F00F4051E /* BadGuy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadGuy.swift; sourceTree = "<group>"; };
+		330831741C35BF7D00F4051E /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
+		330831751C35BF7D00F4051E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B51590A61C3229FA00DB5455 /* BubbleWorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleWorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51590A91C3229FA00DB5455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51590AB1C3229FA00DB5455 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B51590AD1C3229FA00DB5455 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B51590AF1C3229FA00DB5455 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B51590B21C3229FA00DB5455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,14 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				B51590A91C3229FA00DB5455 /* AppDelegate.swift */,
-				B51590AB1C3229FA00DB5455 /* GameScene.sks */,
 				B51590AD1C3229FA00DB5455 /* GameScene.swift */,
+				330831741C35BF7D00F4051E /* SparkParticle.sks */,
+				330831751C35BF7D00F4051E /* spark.png */,
 				B51590AF1C3229FA00DB5455 /* GameViewController.swift */,
 				B51590B11C3229FA00DB5455 /* Main.storyboard */,
 				B51590B41C3229FA00DB5455 /* Assets.xcassets */,
 				B51590B61C3229FA00DB5455 /* LaunchScreen.storyboard */,
 				B51590B91C3229FA00DB5455 /* Info.plist */,
 				B51590E91C3245B400DB5455 /* Hero.swift */,
+				330831721C35968F00F4051E /* BadGuy.swift */,
 			);
 			path = BubbleWorm;
 			sourceTree = "<group>";
@@ -105,6 +111,7 @@
 				TargetAttributes = {
 					B51590A51C3229FA00DB5455 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S42UTJQK99;
 					};
 				};
 			};
@@ -131,8 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51590AC1C3229FA00DB5455 /* GameScene.sks in Resources */,
+				330831771C35BF7D00F4051E /* spark.png in Resources */,
 				B51590B81C3229FA00DB5455 /* LaunchScreen.storyboard in Resources */,
+				330831761C35BF7D00F4051E /* SparkParticle.sks in Resources */,
 				B51590B51C3229FA00DB5455 /* Assets.xcassets in Resources */,
 				B51590B31C3229FA00DB5455 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330831731C35968F00F4051E /* BadGuy.swift in Sources */,
 				B51590AE1C3229FA00DB5455 /* GameScene.swift in Sources */,
 				B51590B01C3229FA00DB5455 /* GameViewController.swift in Sources */,
 				B51590AA1C3229FA00DB5455 /* AppDelegate.swift in Sources */,
@@ -261,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BubbleWorm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SuctionPeach.BubbleWorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BubbleWorm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SuctionPeach.BubbleWorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
